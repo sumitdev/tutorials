@@ -2,19 +2,19 @@
 
 # Graphite Installation
 
-####Update and install some dependencies:  
-<br />
+####Update and install yum dependencies:  
+
 ```
 yum -y update 
 yum install -y httpd net-snmp perl pycairo mod_wsgi python-devel git gcc-c++ --enablerepo=epel
 ```
 
 ####Install Python Package manager:
-<br/>
+
 `yum install -y python-pip node npm `
 
 ####Install graphite abd dependencies with pip
-<br />
+
 ```
 pip-2.6 install 'django<1.6'
 pip-2.6 install 'Twisted<12'
@@ -24,7 +24,7 @@ pip-2.6 install graphite-web
 pip-2.6 install carbon
 ```
 ####Configuration
-<br />
+
 ```
 cp /opt/graphite/examples/example-graphite-vhost.conf /etc/httpd/conf.d/graphite.conf
 cp /opt/graphite/conf/storage-schemas.conf.example /opt/graphite/conf/storage-schemas.conf
