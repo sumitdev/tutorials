@@ -1,6 +1,8 @@
 
 
-# Graphite Installation
+# Graphite Installation 
+
+##### Note: This tutorial is only for RPM based systems, such as EC2 Amazon Linux 
 
 #### Update and install yum dependencies:  
 
