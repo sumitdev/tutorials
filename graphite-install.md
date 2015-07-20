@@ -15,7 +15,7 @@ yum install -y httpd net-snmp perl pycairo mod_wsgi python-devel git gcc-c++ --e
 
 `yum install -y python-pip node npm `
 
-#### Install graphite abd dependencies with pip
+#### Install graphite and its dependencies with pip
 
 ```
 pip-2.6 install 'django<1.6'
