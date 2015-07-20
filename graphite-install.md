@@ -35,10 +35,9 @@ cp /opt/graphite/conf/carbon.conf.example /opt/graphite/conf/carbon.conf
 ```
 <br/>
 Apply the fix mentioned here 
-[http://www.reemachugani.com/blog/2015/feb/14/no-module-named-fields-importing-GenericForeignKey/](http://www.reemachugani.com/blog/2015/feb/14/no-module-named-fields-importing-GenericForeignKey/) <br/> <br/>
-It essentially says to edit **/usr/local/lib/python2.6/site-packages/tagging/models.py** and replace <br/>
-`from django.contrib.contenttypes.fields import GenericForeignKey` <br/>
-with
+[http://www.reemachugani.com/blog/2015/feb/14/no-module-named-fields-importing-GenericForeignKey/](http://www.reemachugani.com/blog/2015/feb/14/no-module-named-fields-importing-GenericForeignKey/) <br/>
+It essentially says to edit **/usr/local/lib/python2.6/site-packages/tagging/models.py** and replace
+`from django.contrib.contenttypes.fields import GenericForeignKey` with
 `from django.contrib.contenttypes.generic import GenericForeignKey`
 
 Grant ownership of storage directory to apache user  
