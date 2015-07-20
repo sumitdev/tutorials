@@ -73,7 +73,7 @@ sudo python manage.py syncdb
 `sudo service httpd start`
 
 **Apache configuration**- */etc/httpd/conf.d/graphite.conf*<br/>
-**Logs**- * /opt/graphite/storage/log/webapp*
+**Logs**- */opt/graphite/storage/log/webapp*
 
 Visit http://ip:port and voilla!
 
