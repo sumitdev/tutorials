@@ -72,9 +72,9 @@ sudo python manage.py syncdb
 - Apache server at port 80 <br/>  
 `sudo service httpd start`
 
-** apache configuration** - 
-* /etc/httpd/conf.d/graphite.conf* <br/>
-**logs** - 
+** Apache configuration**- 
+*/etc/httpd/conf.d/graphite.conf*<br/>
+**Logs**- 
 * /opt/graphite/storage/log/webapp*
 
 Visit http://ip:port and voilla!
