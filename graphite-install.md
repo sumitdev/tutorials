@@ -2,18 +2,18 @@
 
 # Graphite Installation
 
-####Update and install yum dependencies:  
+#### Update and install yum dependencies:  
 
 ```
 yum -y update 
 yum install -y httpd net-snmp perl pycairo mod_wsgi python-devel git gcc-c++ --enablerepo=epel
 ```
 
-####Install Python Package manager:
+#### Install Python Package manager:
 
 `yum install -y python-pip node npm `
 
-####Install graphite abd dependencies with pip
+#### Install graphite abd dependencies with pip
 
 ```
 pip-2.6 install 'django<1.6'
@@ -23,7 +23,7 @@ pip-2.6 install whisper
 pip-2.6 install graphite-web
 pip-2.6 install carbon
 ```
-####Configuration
+#### Configuration
 
 ```
 cp /opt/graphite/examples/example-graphite-vhost.conf /etc/httpd/conf.d/graphite.conf
@@ -57,7 +57,7 @@ cd /opt/graphite/webapp/graphite
 sudo python manage.py syncdb
 ```
 
-####Deployment
+#### Deployment
 <br/>
 **Start carbon**  
   
